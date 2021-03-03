@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagenQuiz"
+        android:layout_width="365dp"
+        android:layout_height="339dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/Azul" />
+
+    <Button
+        android:id="@+id/botonInicioUsuario"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/baloo"
+        android:text="Iniciar sesion"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonInvitado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonInvitado"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/baloo"
+        android:text="Como invitado"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonCrearUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonCrearUsuario"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/baloo"
+        android:text="Registrarse"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

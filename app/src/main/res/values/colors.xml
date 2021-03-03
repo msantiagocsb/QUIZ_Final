@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4f4d4f</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#ed1616</color>
+    <color name="fffff">#ffffff</color>
+    <color name="Verde">#18ad0b</color>
+    <color name="Fondo">#2b2b2b</color>
+    <color name="Blanco">#ffffff</color>
+    <color name="Negro">#000000</color>
+    <color name="colorFondo">#3ad5ab</color>
+    <color name="Azul">#2453af</color>
+    <color name="Morado">#6029c3</color>
+    <color name="Mostaza">#a06c21</color>
+
+</resources>

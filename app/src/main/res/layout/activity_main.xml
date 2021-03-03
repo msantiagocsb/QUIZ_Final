@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bienvenida"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="457dp"
+        android:layout_height="787dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.239"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486"
+        app:srcCompat="@color/Fondo" />
+
+    <ImageView
+        android:id="@+id/imageSpiner"
+        android:layout_width="99dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerNumPreguntas"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerNumPreguntas"
+        app:layout_constraintStart_toStartOf="@+id/spinnerNumPreguntas"
+        app:layout_constraintTop_toTopOf="@+id/spinnerNumPreguntas"
+        app:srcCompat="@color/Fondo" />
+
+    <ImageView
+        android:id="@+id/fotoPerfil"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/infoNombre"
+        app:layout_constraintTop_toBottomOf="@+id/Bienvenida"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="181dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="84dp"
+        android:fontFamily="@font/baloo"
+        android:text="QUIZ"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Bienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="Bienvenido!"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/botonJugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/baloo"
+        android:text="Jugar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/botonSalir" />
+
+    <Button
+        android:id="@+id/botonAjustes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/baloo"
+        android:text="Ajustes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonJugar"
+        app:layout_constraintStart_toEndOf="@+id/botonSalir" />
+
+    <Button
+        android:id="@+id/botonFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/baloo"
+        android:text="Foto de perfil"
+        app:layout_constraintBottom_toTopOf="@+id/botonAjustes"
+        app:layout_constraintEnd_toStartOf="@+id/botonJugar"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/botonSalir" />
+
+    <Button
+        android:id="@+id/botonSalir"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/baloo"
+        android:text="Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonJugar"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/infoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/baloo"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bienvenida" />
+
+    <TextView
+        android:id="@+id/numeroPregunta"
+        android:layout_width="262dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/baloo"
+        android:text="Numero de preguntas"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerNumPreguntas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerNumPreguntas"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonJugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/modoOscuro"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/baloo"
+        android:text="ON/OFF"
+        app:layout_constraintBottom_toTopOf="@+id/numeroPregunta"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/musica"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/baloo"
+        android:text="ON/OFF"
+        app:layout_constraintBottom_toTopOf="@+id/modoOscuro"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textModoOscuro"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/baloo"
+        android:text="Modo oscuro"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/numeroPregunta"
+        app:layout_constraintEnd_toStartOf="@+id/modoOscuro" />
+
+    <TextView
+        android:id="@+id/textModoOscuro2"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="@font/baloo"
+        android:text="Musica"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textModoOscuro"
+        app:layout_constraintEnd_toStartOf="@+id/modoOscuro" />
+
+</android.support.constraint.ConstraintLayout>
